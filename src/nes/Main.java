@@ -121,14 +121,7 @@ public class Main {
 	}
 	
 	public static void main(String[] args) throws IOException {
-//		NESFile file = new NESFile(new File("/Users/yukimori/Downloads/nesmas/nesmas.nes"));
-//		NESFile file = new NESFile(new File("/Users/yukimori/Downloads/blargg_ppu_tests_2005.09.15b/palette_ram.nes"));
-//		NESFile file = new NESFile(new File("/Users/yukimori/Downloads/blargg_ppu_tests_2005.09.15b/power_up_palette.nes"));
-//		NESFile file = new NESFile(new File("/Users/yukimori/Downloads/blargg_ppu_tests_2005.09.15b/sprite_ram.nes"));
-//		NESFile file = new NESFile(new File("/Users/yukimori/Downloads/blargg_ppu_tests_2005.09.15b/vram_access.nes"));
-//		NESFile file = new NESFile(new File("/Users/yukimori/Downloads/blargg_ppu_tests_2005.09.15b/vbl_clear_time.nes"));
-		NESFile file = new NESFile(chooseFile("/Users/yukimori/develop/old/nes/"));
-//		NESFile file = new NESFile(new File("/Users/yukimori/develop/old/nes/IceClimber.nes"));
+		NESFile file = new NESFile(chooseFile("./develop/old/nes"));
 		if(file != null){
 			file.load();
 			boot(file);
